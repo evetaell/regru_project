@@ -228,4 +228,62 @@ git checkout -b feature1
 $ git add .
 $ git commit -m "New feature1 and change fileB and task1.1_answer"
 
+## 13.
+cd /home/evetaell/work/project13/
+evetaell@evetaell-To-be-filled-by-O-E-M ~/work/project13 $ git checkout -b feature2
+Переключено на новую ветку «feature2»
+
+## 14.
+$ git pull origin feature1
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 1 (delta 0), pack-reused 0
+Распаковка объектов: 100% (3/3), готово.
+Из https://github.com/evetaell/regru_project
+ * branch            feature1   -> FETCH_HEAD
+ * [новая ветка]     feature1   -> origin/feature1
+Обновление 8850748..91064fe
+Fast-forward
+ fileB.md          |  1 +
+ task1.1_answer.md | 26 ++++++++++++++++++++++++++
+ 2 files changed, 27 insertions(+)
+evetaell@evetaell-To-be-filled-by-O-E-M ~/work/project13 $ git co master
+Переключено на ветку «master»
+Ваша ветка опережает «origin/master» на 4 коммита.
+  (используйте «git push», чтобы опубликовать ваши локальные коммиты)
+evetaell@evetaell-To-be-filled-by-O-E-M ~/work/project13 $ git merge feature1
+merge: feature1 — not something we can merge
+
+Возможно, вы имели в виду это?
+	origin/feature1
+evetaell@evetaell-To-be-filled-by-O-E-M ~/work/project13 $ git merge origin/feature1
+Обновление 8850748..91064fe
+Fast-forward
+ fileB.md          |  1 +
+ task1.1_answer.md | 26 ++++++++++++++++++++++++++
+ 2 files changed, 27 insertions(+)
+evetaell@evetaell-To-be-filled-by-O-E-M ~/work/project13 $ 
+
+##15.
+
+git co feature2
+Переключено на ветку «feature2»
+
+git branch
+* feature2
+  master
+
+git branch -a
+* feature2
+  master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/feature1
+  remotes/origin/feature2
+  remotes/origin/master
+  remotes/project1/master  #ветка в первом репозитории
+
+
+
+
+
 
