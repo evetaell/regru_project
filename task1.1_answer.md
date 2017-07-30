@@ -203,3 +203,29 @@ evetaell@evetaell-To-be-filled-by-O-E-M ~/work/project1 $
 
 git checkout 4553ce3 fileB.md
 
+лог в первом
+
+## 11.
+git hist
+* 8850748 2017-07-30 | FileB restore and change task1.1_answer (HEAD -> master) [Светлана Хмелева]
+* 8921b44 2017-07-30 | Delete fileB, change task1.1_answer [Светлана Хмелева]
+* f5f8668 2017-07-30 | Change fileA [Светлана Хмелева]
+* dd9bd7b 2017-07-30 | Create fileA and fieB [Светлана Хмелева]
+* 0495780 2017-07-30 | Create task1.1_answer.md [Светлана Хмелева]
+
+лог во втором
+
+git hist
+* 8850748 2017-07-30 | FileB restore and change task1.1_answer (HEAD -> master, project1/master) [Светлана Хмелева]
+* 8921b44 2017-07-30 | Delete fileB, change task1.1_answer [Светлана Хмелева]
+* f5f8668 2017-07-30 | Change fileA [Светлана Хмелева]
+* dd9bd7b 2017-07-30 | Create fileA and fieB [Светлана Хмелева]
+* 0495780 2017-07-30 | Create task1.1_answer.md (origin/master, origin/HEAD) [Светлана Хмелева]
+
+## 12.
+git checkout -b feature1
+Переключено на новую ветку «feature1»
+$ git add .
+$ git commit -m "New feature1 and change fileB and task1.1_answer"
+
+
