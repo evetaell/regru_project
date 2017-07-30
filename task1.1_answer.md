@@ -74,4 +74,15 @@ evetaell@evetaell-To-be-filled-by-O-E-M ~/work/project1 $ git status
 
 git push origin
 
+## 6.
+ git clone /home/evetaell/work/project1 project13
+Клонирование в «project13»…
+готово.
 
+## 7.
+Создала fileA и fileB, внесла правки в task1.1_answer. 
+Сделала commit
+Внесла task1.1_answer в игнор, чтобы его правки не попали в первый репозиторий.
+Зашла в первый репозиторий
+
+git pull project13 master
