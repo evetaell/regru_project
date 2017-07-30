@@ -264,7 +264,7 @@ Fast-forward
  2 files changed, 27 insertions(+)
 evetaell@evetaell-To-be-filled-by-O-E-M ~/work/project13 $ 
 
-##15.
+## 15.
 
 git co feature2
 Переключено на ветку «feature2»
@@ -282,8 +282,176 @@ git branch -a
   remotes/origin/master
   remotes/project1/master  #ветка в первом репозитории
 
+## 16.
+откат до слияния с feature1
+
+$ git co f952352
+Note: checking out 'f952352'.
+
+слияние master c feature2
+
+$ git merge origin/feature2
 
 
+## 17.
 
+$git log --stat --graph
+*   commit 6699a01241fdbe7a1944c091db3debd8797df1fb
+|\  Merge: db252b5 0d14d6d
+| | Author: Светлана Хмелева <hmeleva@reg.ru>
+| | Date:   Sun Jul 30 16:24:54 2017 +0400
+| | 
+| |     Fix task1.1_answer
+| |   
+| * commit 0d14d6d326c625af4432cc48a3103e43c1c43a12
+| | Author: Светлана Хмелева <hmeleva@reg.ru>
+| | Date:   Sun Jul 30 15:59:19 2017 +0400
+| | 
+| |     Look branches and change task1.1_answer
+| | 
+| |  task1.1_answer.md | 58 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+| |  1 file changed, 58 insertions(+)
+| |     
+* |   commit db252b5e4d9a3a804ac67c198c03d5c8cb6b5d5e
+|\ \  Merge: f952352 c964ae9
+| | | Author: Светлана Хмелева <hmeleva@reg.ru>
+| | | Date:   Sun Jul 30 16:15:03 2017 +0400
+| | | 
+| | |     Change task1.1_answer - fix conflict
+| | |    
+| * | commit c964ae99010ca919f9900e0d0ba499c1f72bcce5
+| | | Author: Светлана Хмелева <hmeleva@reg.ru>
+| | | Date:   Sun Jul 30 15:42:22 2017 +0400
+| | | 
+| | |     Change task1.1_answer
+| | | 
+| | |  task1.1_answer.md | 4 ----
+| | |  1 file changed, 4 deletions(-)
+| | |      
+| * |   commit af61dff1284b440e712b8486e2681e638bcd2381
+| |\ \  Merge: 30bcd56 7902470
+| | | | Author: Светлана Хмелева <hmeleva@reg.ru>
+| | | | Date:   Sun Jul 30 15:38:56 2017 +0400
+| | | | 
+| | | |     Merge branch 'master' of https://github.com/evetaell/regru_project
+| | | |     
+| * | | commit 30bcd567f4d8aae6d3e8cc18a58dd1e2f3c0e7bb
+| | |/  Author: Светлана Хмелева <hmeleva@reg.ru>
+| |/|   Date:   Sun Jul 30 15:35:18 2017 +0400
+| | |   
+| | |       Create feature2, merge feature1 in master and change task1.1_answer
+| | |   
+| | |    task1.1_answer.md | 36 ++++++++++++++++++++++++++++++++++++
+| | |    1 file changed, 36 insertions(+)
+| | |    
+* | | commit f952352378de9b799e6dd113857a40c948cb0f4e
+| |/  Author: Светлана Хмелева <hmeleva@reg.ru>
+|/|   Date:   Sun Jul 30 16:13:26 2017 +0400
+| |   
+| |       Change task1.1_answer
+| |   
+| |    task1.1_answer.md | 58 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+| |    1 file changed, 58 insertions(+)
+| |   
+* | commit 79024708d001ed66331c9ab7a19222fe208f47f0
+| | Author: Светлана Хмелева <hmeleva@reg.ru>
+| | Date:   Sun Jul 30 15:25:25 2017 +0400
+| | 
+| |     Change fileB
+| | 
+| |  fileB.md | 1 +
+| |  1 file changed, 1 insertion(+)
+| |     
+* |   commit b4f003bd774f39a601f288d79c197a2f2118226a
+|\ \  Merge: 91064fe 29ffdd9
+| |/  Author: Светлана Хмелева <hmeleva@reg.ru>
+|/|   Date:   Sun Jul 30 15:18:35 2017 +0400
+| |   
+| |       Fix conflict
+| |   
+| * commit 29ffdd966c70e046051268fa3c354e737f39e687
+| | Author: Светлана Хмелева <hmeleva@reg.ru>
+| | Date:   Sun Jul 30 14:38:30 2017 +0400
+| | 
+| |     FileB restore
+| | 
+| |  fileB.md | 1 +
+| |  1 file changed, 1 insertion(+)
+| |   
+* | commit 91064fe941ae5e086eca7352a6ab5f3f20282aa2
+| | Author: Светлана Хмелева <hmeleva@reg.ru>
+| | Date:   Sun Jul 30 14:58:03 2017 +0400
+| | 
+| |     New feature1 and change fileB and task1.1_answer
+| | 
+| |  fileB.md          |  1 +
+| |  task1.1_answer.md | 26 ++++++++++++++++++++++++++
+| |  2 files changed, 27 insertions(+)
+| |   
+* | commit 885074808a8eefa947c9fe4b0f323ab805d6757a
+|/  Author: Светлана Хмелева <hmeleva@reg.ru>
+|   Date:   Sun Jul 30 14:38:30 2017 +0400
+|   
+|       FileB restore and change task1.1_answer
+|   
+|    fileB.md          |   1 +
+|    task1.1_answer.md | 154 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-------------------------
+|    2 files changed, 118 insertions(+), 37 deletions(-)
+|  
+* commit 8921b44e5bdbe985ad475b90934c01c03b7abcf6
+| Author: Светлана Хмелева <hmeleva@reg.ru>
+| Date:   Sun Jul 30 13:59:04 2017 +0400
+| 
+|     Delete fileB, change task1.1_answer
+| 
+|  fileB.md          |  1 -
+|  task1.1_answer.md | 37 +++++++++++++++++++++++++++++++++++++
+|  2 files changed, 37 insertions(+), 1 deletion(-)
+|  
+* commit f5f866813c970975cb36341e702fcd7cf80659ee
+| Author: Светлана Хмелева <hmeleva@reg.ru>
+| Date:   Sun Jul 30 13:52:23 2017 +0400
+| 
+|     Change fileA
+| 
+|  fileA.md | 1 +
+|  1 file changed, 1 insertion(+)
+|  
+* commit dd9bd7ba5a4fcf6a48fafc472f6ef737cdc9535b
+| Author: Светлана Хмелева <hmeleva@reg.ru>
+| Date:   Sun Jul 30 13:38:32 2017 +0400
+| 
+|     Create fileA and fieB
+| 
+|  fileA.md          |  1 +
+|  fileB.md          |  1 +
+|  task1.1_answer.md | 13 ++++++++++++-
+|  3 files changed, 14 insertions(+), 1 deletion(-)
+|  
+* commit 0495780dd6efaa759ce328db7a9304759dee1dca
+  Author: Светлана Хмелева <hmeleva@reg.ru>
+  Date:   Sun Jul 30 10:57:13 2017 +0400
+  
+      Create task1.1_answer.md
+  
+   task1.1_answer.md | 77 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   1 file changed, 77 insertions(+)
+(END)
 
+$git branch -D feature1
+Ветка feature1 удалена (была 91064fe).
+
+$ git push origin :feature1
+Username for 'https://github.com': evetaell
+Password for 'https://evetaell@github.com': 
+To https://github.com/evetaell/regru_project.git
+ - [deleted]         feature1
+
+## 18.
+
+git tag v1.0
+
+# 19 Репозитории синхронизированы
+
+# 20 ссылка будет отправлена на mentors-team@dev.reg.ru 
 
