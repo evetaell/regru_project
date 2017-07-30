@@ -86,3 +86,40 @@ git push origin
 Зашла в первый репозиторий
 
 git pull project13 master
+
+## 8. 
+git add .
+$ git commit -m "Change fileA"
+[master f5f8668] Change fileA
+ 1 file changed, 1 insertion(+)
+evetaell@evetaell-To-be-filled-by-O-E-M ~/work/project1 $ git log -p fileA.md
+commit f5f866813c970975cb36341e702fcd7cf80659ee
+Author: Светлана Хмелева <hmeleva@reg.ru>
+Date:   Sun Jul 30 13:52:23 2017 +0400
+
+    Change fileA
+
+diff --git a/fileA.md b/fileA.md
+index 18a1a7a..d3dce88 100644
+--- a/fileA.md
++++ b/fileA.md
+@@ -1 +1,2 @@
+ String 1
++String 2
+
+commit dd9bd7ba5a4fcf6a48fafc472f6ef737cdc9535b
+Author: Светлана Хмелева <hmeleva@reg.ru>
+Date:   Sun Jul 30 13:38:32 2017 +0400
+
+    Create fileA and fieB
+
+diff --git a/fileA.md b/fileA.md
+new file mode 100644
+index 0000000..18a1a7a
+--- /dev/null
++++ b/fileA.md
+@@ -0,0 +1 @@
++String 1
+$ git rm fileB.md
+rm 'fileB.md'
+
