@@ -251,11 +251,15 @@ evetaell@evetaell-To-be-filled-by-O-E-M ~/work/project13 $ git co master
 Переключено на ветку «master»
 Ваша ветка опережает «origin/master» на 4 коммита.
   (используйте «git push», чтобы опубликовать ваши локальные коммиты)
+<<<<<<< HEAD
 evetaell@evetaell-To-be-filled-by-O-E-M ~/work/project13 $ git merge feature1
 merge: feature1 — not something we can merge
 
 Возможно, вы имели в виду это?
 	origin/feature1
+=======
+
+>>>>>>> c964ae99010ca919f9900e0d0ba499c1f72bcce5
 evetaell@evetaell-To-be-filled-by-O-E-M ~/work/project13 $ git merge origin/feature1
 Обновление 8850748..91064fe
 Fast-forward
@@ -264,7 +268,7 @@ Fast-forward
  2 files changed, 27 insertions(+)
 evetaell@evetaell-To-be-filled-by-O-E-M ~/work/project13 $ 
 
-## 15.
+##15.
 
 git co feature2
 Переключено на ветку «feature2»
@@ -281,9 +285,4 @@ git branch -a
   remotes/origin/feature2
   remotes/origin/master
   remotes/project1/master  #ветка в первом репозитории
-
-
-
-
-
 
